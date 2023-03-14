@@ -1,10 +1,11 @@
-package web.service;
+package web.DAO;
 
 import web.model.User;
 
 import java.util.List;
 
-public interface UserService {
+public interface UserDao {
+
 
     public void saveUser (User user);
 
@@ -17,4 +18,6 @@ public interface UserService {
     public User findById (Long id);
 
     public List<User> getAllUsers();
+
+
 }
